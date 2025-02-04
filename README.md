@@ -34,3 +34,16 @@ npm install
 ```bash
 npm run dev
 ```
+
+***
+
+Проверка входящих сообщений происходит по кнопке. Чтобы сделать автоматически, нужно раскомментировать код:
+
+```bash
+// useEffect(() => {
+//   const interval = setInterval(fetchMessages, 5000); // Fetch messages every 5 seconds
+//   return () => clearInterval(interval);
+// }, [idInstance, apiTokenInstance]);
+```
+
+Просто на первом аккаунте почему-то кончился ресурс бесплатных сообщений. Пришлось поставить кнопку.
